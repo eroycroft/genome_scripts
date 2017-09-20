@@ -2,7 +2,7 @@
 
 ####################################################
 #                                                  #
-# Useful dependencies for biologist's using Linux  #
+# Useful dependencies for biologists using Linux   #
 # EMILY ROYCROFT                                   #
 #                                                  #
 ####################################################
