@@ -16,16 +16,17 @@ sudo apt install dos2unix
 
 sudo apt install trash-cli
 
-# Python libray for bioinformatics (implemented in Python 2)
+# Python libraries essential for bioinformatics (implemented in Python 2)
 
 sudo apt install python-biopython 
 
+sudo apt-get install python-numpy 
 
 
 ####################################################
 #                                                  #
 # To look for new packages available through the   #
-# ADVANCED PACKAGE TOOL (apt) use the code         #
+# ADVANCED PACKAGE TOOL (APT) use the code         #
 # sudo apt-cache search <search term>              #
 #                                                  #
 ####################################################
