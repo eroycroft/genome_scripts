@@ -22,6 +22,15 @@ sudo apt install python-biopython
 
 sudo apt-get install python-numpy 
 
+# install Bio::SeqIO
+
+cpan App::cpanminus
+sudo cpanm Bio::SeqIO
+
+#Alternatively;
+#sudo cpanm --force Bio::SeqIO
+
+
 
 ####################################################
 #                                                  #
