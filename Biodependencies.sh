@@ -1,11 +1,8 @@
 #!/bin/bash
 
-####################################################
-#                                                  #
-# Useful dependencies for biologists using Linux   #
-# EMILY ROYCROFT                                   #
-#                                                  #
-####################################################
+###########################
+# Useful dependencies     #
+###########################
 
 
 # convert text file line endings between CRLF and LF
