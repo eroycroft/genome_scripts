@@ -1,2 +1,2 @@
-# Biodependencies
-Useful packages for biologists using Linux
+# genome_scripts
+Useful scripts for whole genome analysis
