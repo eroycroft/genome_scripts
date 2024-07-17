@@ -2,8 +2,7 @@
 Useful scripts for whole genome analysis
 
 ### heteroWindows.py
-Counts heterozygous sites in non-overlapping windows of a specified length (e.g. 1000bp), in a .g.vcf file format  
-then takes the average count across agregated windows, e.g. average heterozygous sites/kb per 1000 windows (specify aggregate window size)
+Counts heterozygous sites in non-overlapping windows of a specified length (e.g. 1000bp), in a .g.vcf file then takes the average count across agregated windows, e.g. average heterozygous sites/kb per 1000 windows (specify aggregate window size)
 
 Example:
 python3 heteroWindows.py [input.g.vcf.gz] [output.txt]
