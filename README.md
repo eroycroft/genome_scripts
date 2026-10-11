@@ -14,3 +14,31 @@ python3 heteroWindows.py [input.g.vcf.gz] [output.txt]
  
  --resume [Resume from the most recent line if the script is interrupted, read from the last line of file to determine the block to resume from]
 
+
+
+### extract_snps.py
+Extracts one random (or all) biallelic SNPs from multi-sample sequence alignments (FASTA/Phylip), enforcing custom rules (see below). 
+Handles alignments per locus in a directory, and outputs concatenated nucleotide and binary SNPs in .fasta format, and a .csv in binary format (to be imported into R)
+
+### Example:
+ python extract_snps.py --input <dir> --out-prefix <prefix> [options]
+
+### Required:
+  --input <dir>            Directory containing alignment files (.fasta or .phy).
+  --out-prefix <prefix>    Prefix for output files.
+
+### Optional:
+  --taxa-file <file>       File containing one taxon/sample name per line.
+                           Only these taxa are used when identifying/filtering SNPs.
+                           If not provided, all taxa are used.
+  --all-snps               Output all SNPs from each locus instead of one at random.
+  --min-maf <int>          Minimum count of minor allele (default 1).
+  --max-missing <float>    Maximum fraction of missing data allowed per SNP (0–1, default 0.2).
+  --replicates <int>       Number of random replicates to run (default 1).
+  --seed <int>             Random seed for reproducibility (optional).
+
+### Outputs:
+  1. <prefix>_repN_nucleotides.fasta  → Concatenated SNPs in nucleotide/IUPAC codes.
+  2. <prefix>_repN_binary.fasta       → Same SNPs, encoded as 0/1/2/NA.
+  3. <prefix>_repN_binary.csv         → CSV version of binary SNPs with loci as columns.
+  4. <prefix>_repN_loci.txt           → Ordered list of locus files contributing SNPs.
