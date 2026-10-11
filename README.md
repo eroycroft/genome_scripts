@@ -1,7 +1,7 @@
 # genome_scripts
 Some scripts for exploring whole genome re-sequencing data
 
-### heteroWindows.py
+## heteroWindows.py
 Counts heterozygous sites in non-overlapping windows of a specified length (e.g. 1000bp), in a .g.vcf file then takes the average count across agregated windows, e.g. average heterozygous sites/kb per 1000 windows (specify aggregate window size)
 
 ### Example:
@@ -16,7 +16,7 @@ python3 heteroWindows.py [input.g.vcf.gz] [output.txt]
 
 
 
-### extract_snps.py
+## extract_snps.py
 Extracts one random (or all) biallelic SNPs from multi-sample sequence alignments (FASTA/Phylip), enforcing custom rules (see below). 
 Handles alignments per locus in a directory, and outputs concatenated nucleotide and binary SNPs in .fasta format, and a .csv in binary format (to be imported into R)
 
